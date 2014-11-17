@@ -40,7 +40,7 @@ public class crearAdmRestaurant extends Activity{
 		
 	//private static String url_create_Adm = "http://190.153.212.77/daniel_fernandez/nuevoAdmRestaurant.php";
 	//private static String url_create_Adm = "http://10.40.3.149/PHP/FlashmenuPHP/nuevoAdmRestaurant.php";
-		private static String url_create_Adm = servidor.ip() + "/PHP/FlashmenuPHP/nuevoAdmRestaurant.php";
+		private static String url_create_Adm = servidor.ip() + servidor.ruta2()+"nuevoAdmRestaurant.php";
 	
 		private static final String TAG_SUCCESS = "success";
 

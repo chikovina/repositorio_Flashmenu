@@ -50,7 +50,7 @@ public class inicioSesionCliente extends Activity {
 	 String IP_Server="200.83.21.43";
 	// String URL_connect="http://190.153.212.77/daniel_fernandez/iniciarSesionCliente.php";
 	//private static String URL_connect = "http://10.40.3.149/PHP/FlashmenuPHP/iniciarSesionCliente.php";
-	private static String URL_connect = servidor.ip() + "/PHP/FlashmenuPHP/iniciarSesionCliente.php";
+	private static String URL_connect = servidor.ip() + servidor.ruta2() + "iniciarSesionCliente.php";
 	
     private ProgressDialog pDialog;
 

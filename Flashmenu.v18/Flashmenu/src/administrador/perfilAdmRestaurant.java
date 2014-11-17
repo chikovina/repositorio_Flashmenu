@@ -44,8 +44,8 @@ public class perfilAdmRestaurant extends Activity {
 	  
 	   //private static String url_all_inforest = "http://10.40.3.149/PHP/FlashmenuPHP/perfilAdm.php";
 	   //private static String url_all_inforest = "http://190.153.212.77/daniel_fernandez/perfilAdm.php"
-	   private static String url_all_inforest = servidor.ip() + "/PHP/FlashmenuPHP/perfilAdm.php";
-	   private static String url_all_rest = servidor.ip() + "/PHP/FlashmenuPHP/perfilAdm2.php";
+	   private static String url_all_inforest = servidor.ip() +servidor.ruta2() + "perfilAdm.php";
+	   private static String url_all_rest = servidor.ip() + servidor.ruta2() + "perfilAdm2.php";
 	   
 	   
 	JSONArray j1 = null;

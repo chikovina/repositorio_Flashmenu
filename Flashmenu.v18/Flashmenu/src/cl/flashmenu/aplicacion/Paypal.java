@@ -62,6 +62,30 @@ public class Paypal extends Activity {
             .merchantName("Hipster Store")
             .merchantPrivacyPolicyUri(Uri.parse("https://www.example.com/privacy"))
             .merchantUserAgreementUri(Uri.parse("https://www.example.com/legal"));
+    
+    
+    public void onClick(View v) {
+        // Reemplazamos el email por algun otro real
+        String[] to = { "daniel18.df@gmail.com" };
+        String[] cc = { "octavio.valencia.v@gmail.com" };
+        enviar(to, cc, "Hola",
+                "Esto es un email enviado desde una app de Android");
+    }
+    
+    
+    private void enviar(String[] to, String[] cc,
+            String asunto, String mensaje) {
+            Intent emailIntent = new Intent(Intent.ACTION_SEND);
+            emailIntent.setData(Uri.parse("mailto:"));
+            //String[] to = direccionesEmail;
+            //String[] cc = copias;
+            emailIntent.putExtra(Intent.EXTRA_EMAIL, to);
+            emailIntent.putExtra(Intent.EXTRA_CC, cc);
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT, asunto);
+            emailIntent.putExtra(Intent.EXTRA_TEXT, mensaje);
+            emailIntent.setType("message/rfc822");
+            startActivity(Intent.createChooser(emailIntent, "Email "));
+        }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +121,7 @@ public class Paypal extends Activity {
     }
     
     private PayPalPayment getThingToBuy(String paymentIntent) {
-        return new PayPalPayment(new BigDecimal("9980"), "USD", "Total de los menus: ",
+        return new PayPalPayment(new BigDecimal("9980"), "USD", "Total del pedido: ",
                 paymentIntent);
     }
     

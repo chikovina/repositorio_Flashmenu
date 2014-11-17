@@ -28,6 +28,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -43,6 +45,8 @@ public class ListaRestaurant extends ListActivity {
 	String idadmrest;
 	String idd, nombreR;
 	
+	TextView tituloList;
+	
 	// Creating JSON Parser object
 	JSONParser jParser = new JSONParser();
 
@@ -50,7 +54,7 @@ public class ListaRestaurant extends ListActivity {
 
 	// url to get all empleados list Reemplaza la IP de tu equipo o la direccion de tu servidor 
 	// Si tu servidor es tu PC colocar IP Ej: "http://127.97.99.200/taller06oct/..", no colocar "http://localhost/taller06oct/.."
-	private static String url_Lista_rest = servidor.ip() + "/PHP/FlashmenuPHP/ListaRestaurant.php";
+	private static String url_Lista_rest = servidor.ip() + servidor.ruta2()+"ListaRestaurant.php";
 
 	// JSON Node names
 	private static final String TAG_SUCCESS = "success";
@@ -76,6 +80,7 @@ public class ListaRestaurant extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.lista); 
 		
+		tituloList = (TextView) findViewById(R.id.titulolista);
 		
 		
 		//RECIBIR DATOS POR INTENT
@@ -121,8 +126,9 @@ public class ListaRestaurant extends ListActivity {
 				
 				
 				// sending pid to next activity		
+			
 				in.putExtra(TAG_NOMBRE, cedula);
-				
+				//in.putExtra(tituloList, "Restaurant");
 				// starting new activity and expecting some response back
 				startActivityForResult(in, 100);
 				//startActivity(in);

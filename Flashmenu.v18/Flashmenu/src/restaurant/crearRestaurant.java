@@ -66,7 +66,7 @@ public class crearRestaurant extends Activity{
 		
 		//private static String url_create_rest = "http://190.153.212.77/daniel_fernandez/nuevoRestaurant.php";
 		//private static String url_create_rest = "http://10.40.3.149/PHP/FlashmenuPHP/nuevoRestaurant.php";
-		private static String url_create_rest = servidor.ip() + "/PHP/FlashmenuPHP/nuevoRestaurant.php";
+		private static String url_create_rest = servidor.ip() + servidor.ruta2() + "nuevoRestaurant.php";
 		
 		private static final String TAG_SUCCESS = "success";
 		

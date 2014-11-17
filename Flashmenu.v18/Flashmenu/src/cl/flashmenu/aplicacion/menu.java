@@ -50,7 +50,7 @@ public class menu extends Activity {
 
 	//private static String url_all_infmenu = "http://190.153.212.77/daniel_fernandez/menu.php";
 	//private static String url_all_infmenu = "http://10.40.3.149/PHP/FlashmenuPHP/menu.php";
-	private static String url_all_infmenu = servidor.ip() + "/PHP/FlashmenuPHP/menu.php";
+	private static String url_all_infmenu = servidor.ip() + servidor.ruta2()+"menu.php";
 
 	// JSON Node names
 	private static final String TAG_SUCCESS = "success";

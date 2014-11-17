@@ -51,12 +51,12 @@ public class modificarRestaurant extends Activity {
 	
     //private static final String url_detalles_rest = "http://190.153.212.77/daniel_fernandez/datosRestaurant.php";	
    // private static String url_detalles_rest = "http://10.40.3.149/PHP/FlashmenuPHP/datosRestaurant.php";
-    private static String url_detalles_rest = servidor.ip() + "/PHP/FlashmenuPHP/datosRestaurant.php";
+    private static String url_detalles_rest = servidor.ip() + servidor.ruta2()+"datosRestaurant.php";
     
 	
 	//private static final String url_actualizar_rest = "http://190.153.212.77/daniel_fernandez/actualizarRestaurant.php";
 	//private static final String url_actualizar_rest = "http://10.40.3.149/PHP/FlashmenuPHP/actualizarRestaurant.php";
-	private static final String url_actualizar_rest = servidor.ip() + "/PHP/FlashmenuPHP/actualizarRestaurant.php";
+	private static final String url_actualizar_rest = servidor.ip() + servidor.ruta2()+"actualizarRestaurant.php";
 
 
 	

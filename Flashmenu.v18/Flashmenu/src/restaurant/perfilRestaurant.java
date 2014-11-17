@@ -50,7 +50,7 @@ public class perfilRestaurant extends Activity {
 	  
 	   //private static String url_all_inforest = "http://10.40.3.149/PHP/FlashmenuPHP/perfilAdm.php";
 	   //private static String url_all_inforest = "http://190.153.212.77/daniel_fernandez/perfilAdm.php"
-	   private static String url_all_inforest = servidor.ip() + "/PHP/FlashmenuPHP/getRestId.php";
+	   private static String url_all_inforest = servidor.ip() + servidor.ruta2()+"getRestId.php";
 
 	JSONArray j1 = null;
 	JSONArray j2 = null;
@@ -142,7 +142,7 @@ public class perfilRestaurant extends Activity {
 			}
 		});
 		
-		
+		/*
 		//boton bebidas
 		ingresarbebidas = (Button) findViewById(R.id.bebidas);
 		ingresarbebidas.setOnClickListener(new View.OnClickListener() {
@@ -172,7 +172,7 @@ public class perfilRestaurant extends Activity {
 
 			//	finish();
 			}
-		});
+		});*/
 		
 		modificarrest = (Button) findViewById(R.id.ModifRest);
 		modificarrest.setOnClickListener(new View.OnClickListener() {

@@ -45,17 +45,17 @@ public class modificarAdmRestaurant extends Activity {
 
 	// private static final String url_detalles_adm = "http://190.153.212.77/daniel_fernandez/datosAdmRestaurant.php";
 	//private static String url_detalles_adm = "http://10.40.3.149/PHP/FlashmenuPHP/datosAdmRestaurant.php";
-	private static String url_detalles_adm = servidor.ip() + "/PHP/FlashmenuPHP/datosAdmRestaurant.php";
+	private static String url_detalles_adm = servidor.ip() + "datosAdmRestaurant.php";
 	
 	
    //  private static final String url_actualizar_adm = "http://190.153.212.77/daniel_fernandez/actualizarAdmRestaurant.php";
  //  private static String url_actualizar_adm = "http://10.40.3.149/PHP/FlashmenuPHP/actualizarAdmRestaurant.php";
-   private static String url_actualizar_adm = servidor.ip() + "/PHP/FlashmenuPHP/actualizarAdmRestaurant.php";
+   private static String url_actualizar_adm = servidor.ip() +  servidor.ruta2()+ "actualizarAdmRestaurant.php";
    
 	 
    //  private static final String url_borrar_adm = "http://190.153.212.77/daniel_fernandez/borrarAdmRestaurant.php";
     // private static String url_borrar_adm = "http://10.40.3.149/PHP/FlashmenuPHP/borrarAdmRestaurant.php"; 	
-     private static String url_borrar_adm = servidor.ip() + "/PHP/FlashmenuPHP/borrarAdmRestaurant.php";
+     private static String url_borrar_adm = servidor.ip() + servidor.ruta2()+ "borrarAdmRestaurant.php";
      
      
 	private static final String TAG_SUCCESS = "success";

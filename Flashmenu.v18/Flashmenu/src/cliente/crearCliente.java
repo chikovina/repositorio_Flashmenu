@@ -43,7 +43,7 @@ public class crearCliente extends Activity{
 
 		
 		//private static String url_create_Cliente = "http://190.153.212.77/daniel_fernandez/nuevoCliente.php";
-		private static String url_create_Cliente = servidor.ip() + "/PHP/FlashmenuPHP/nuevoCliente.php";
+		private static String url_create_Cliente = servidor.ip() + servidor.ruta2()+"nuevoCliente.php";
 		//private static String url_create_Cliente = "http://10.40.3.149/PHP/FlashmenuPHP/nuevoCliente.php";
 
 		private static final String TAG_SUCCESS = "success";

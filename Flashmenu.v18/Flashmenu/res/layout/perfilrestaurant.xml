@@ -82,16 +82,7 @@
             android:textStyle="bold"
             android:typeface="sans" />
 
-        <Button
-            android:id="@+id/plato"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/ModifRest"
-            android:layout_marginTop="36dp"
-            android:text="Button" />
-
-        <Button
+        <!--  <Button
             android:id="@+id/bebidas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -106,6 +97,17 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/bebidas"
             android:text="Button" />
+-->
+        <Button
+            android:id="@+id/plato"
+            style="@drawable/ingresarproductos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ingresarproductos"
+            android:text="" />
 
     </RelativeLayout>
 

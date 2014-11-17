@@ -34,7 +34,7 @@ public class crearMenuRestaurant extends Activity{
 		
 		//private static String url_create_Rest = "http://190.153.212.77/daniel_fernandez/nuevoMenuRestaurant.php";
 	//	private static String url_create_Rest = "http://10.40.3.149/PHP/FlashmenuPHP/nuevoMenuRestaurant.php";
-		private static String url_create_Rest = servidor.ip() + "/PHP/FlashmenuPHP/nuevoMenuRestaurant.php";
+		private static String url_create_Rest = servidor.ip() + servidor.ruta2()+"nuevoMenuRestaurant.php";
 		private static final String TAG_SUCCESS = "success";
 
 		@Override

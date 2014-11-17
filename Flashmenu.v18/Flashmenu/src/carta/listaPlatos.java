@@ -13,6 +13,7 @@ import org.json.JSONObject;
 import cl.flashmenu.aplicacion.JSONParser;
 import cl.flashmenu.aplicacion.Paypal;
 import cl.flashmenu.aplicacion.R;
+import cl.flashmenu.aplicacion.cantPersonasHorario;
 import cl.flashmenu.aplicacion.pagarMenu;
 import cl.flashmenu.aplicacion.servidor;
 
@@ -52,7 +53,7 @@ public class listaPlatos extends ListActivity {
 
 	// url to get all empleados list Reemplaza la IP de tu equipo o la direccion de tu servidor 
 	// Si tu servidor es tu PC colocar IP Ej: "http://127.97.99.200/taller06oct/..", no colocar "http://localhost/taller06oct/.."
-	private static String url_Lista_platos = servidor.ip() + "/PHP/FlashmenuPHP/ListaPlatos.php";
+	private static String url_Lista_platos = servidor.ip() + servidor.ruta2()+"ListaPlatos.php";
 
 	// JSON Node names
 	private static final String TAG_SUCCESS = "success";
@@ -153,7 +154,7 @@ public class listaPlatos extends ListActivity {
 			@Override
 			public void onClick(View v) {
 				
-				Intent i = new Intent(getApplicationContext(), Paypal.class);
+				Intent i = new Intent(getApplicationContext(), cantPersonasHorario.class);
 				startActivity(i);
 
 				finish();
