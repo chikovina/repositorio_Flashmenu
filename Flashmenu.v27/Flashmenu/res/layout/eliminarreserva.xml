@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cl.flashmenu.aplicacion.perfilCliente" >
+    
+    
+    <Button
+        android:id="@+id/eliminarReservas"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:background="#0F2E66"
+        android:text="Eliminar reservas"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+    
+    <Button
+        android:id="@+id/modifDatos"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eliminarReservas"
+        android:layout_below="@+id/eliminarReservas"
+        android:layout_marginTop="16dp"
+        android:background="#0F2E66"
+        android:text="Modificar mis datos"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/verReservas"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eliminarReservas"
+        android:layout_alignLeft="@+id/eliminarReservas"
+        android:layout_marginBottom="46dp"
+        android:background="#0F2E66"
+        android:text="Ver reservas"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/verReservas"
+        android:layout_alignLeft="@+id/verReservas"
+        android:layout_marginBottom="34dp"
+        android:text="Perfil cliente"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    
+</RelativeLayout> 
