@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<LINK REL="SHORTCUT ICON" HREF="imagenes/favicon.png"> 
+    <title>Registrar Usuario</title>
+    <meta charset = "utf-8">
+<?php
+    $var1=$_GET['var1'];
+    ?>
+   
+</head>
+
+
+
+    <body background="imagenes/bg.jpg">
+
+        <br>
+        <br>
+        <center><span style="font-size:55px;"> <h1> <font color="red" face = "Berlin Sans FB"> FLASHMENU</font> </h1> </span></center>
+        </br>
+        </br>
+
+    <header>
+         <center><h1><font color= "white"> Ingresar platos: </font></h1> </center>
+    </header>  
+
+     
+    <form action= "ing.php" method="post" name="procesar-usuario" enctype="multipart/form-data">  
+
+<center>
+    <hr/>
+
+    
+
+    <!--Nombre plato-->
+
+     <label for="nombre"><font color= "white">Nombre plato:</font</label>
+
+     <input type="text" name="nombre" maxlength="16" />
+
+    <br/><br/>
+
+     
+     <!--descripcion plato--> 
+
+     <label for="descripcion"><font color= "white">Descripcion:</font></label>
+
+     <input type="text" name="descripcion" maxlength="30" />
+
+       
+     <br/><br/>
+
+
+    <!--precio plato-->
+
+     <label for="precio"><font color= "white">Precio:</font></label>
+
+     <input type="text" name="precio" maxlength="16" />
+
+    <br/><br/>
+
+     <input type="submit" name="submit" value="Ingresar..." 
+
+     <?php echo "<meta http-equiv="REFRESH" content="0;url=http://www.flashmenu.cl/prueba/ing.php?var1=$var1">/>" ?>
+
+     <input type="reset" name="clear" value="Borrar"/>
+    </center>
+    </form>
+
+<hr />
+
+<footer>
+
+    &copy;2014 flashmenu.cl
+
+</footer>
+
+    </body>
+
+</html>
