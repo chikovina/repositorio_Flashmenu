@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titulolista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Carta"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="395dp"
+        android:layout_weight="1.29" >
+    </ListView>
+
+    <Button
+        android:id="@+id/botonListas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F2E66"
+            android:text="Siguiente"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+</LinearLayout>
